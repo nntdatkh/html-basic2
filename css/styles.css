@@ -1,7 +1,7 @@
 html {
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-    background-color: #00539F;
+    background-color: #5aa8f0;
 }
 
 body {
@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 20px 0;
-    color: #00539F;
+    color: #1062ad;
 }
   
 p, li {
