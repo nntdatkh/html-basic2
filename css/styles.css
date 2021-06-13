@@ -32,3 +32,13 @@ img {
     width: 450px;
     height: 450px;
 }
+
+ul {
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+ul li {
+    margin-left: 20px;
+}
