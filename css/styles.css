@@ -7,7 +7,7 @@ html {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: #ecd6b7;
+    background-color: #fff;
     padding: 0 20px 20px 20px;
     border: 2px solid black;
 }
@@ -33,12 +33,53 @@ img {
     height: 450px;
 }
 
-ul {
+ul, ol {
     background-color: gray;
     padding: 10px;
     border: 1px solid black;
 }
 
-ul li {
+ul, ol li {
     margin-left: 20px;
+}
+
+
+/* Letter */
+address p {
+    font-size: 12px;
+}
+
+.container-letter dl {
+    font-size: 14px;
+}
+
+.from {
+    text-align: right;
+    line-height: normal;
+}
+
+.letter p {
+    line-height: normal;
+    font-size: 14px;
+}
+
+.container-letter h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+.container-letter .content h2 {
+    font-size: 16px;
+}
+
+.container-letter .content ul, ol {
+    background-color: #fff;
+    border: none;
+    padding: 0 0 0 10px;
+}
+
+.container-letter .content ul, ol li {
+    font-size: 14px;
 }
