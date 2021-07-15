@@ -1,85 +1,59 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font: 1.2em/1.4 Arial, Helvetica, sans-serif;
-}
-
 body {
-  padding: 0 0 1em;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  border: 5px solid #000;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-header ul {
-  list-style: none;
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+}
+
+nav {
+  background-color: #000;
+  padding: 0.5em;
+}
+
+nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-header a {
+nav a {
   color: #fff;
   text-decoration: none;
-  display: block;
   padding: 0.5em 1em;
-  /* border-top: 1px solid #999; */
 }
 
-header .title {
-  font-size: 150%;
-  font-style: italic;
-  font-weight: bold;
-  padding: 1em;
-}
-
-main {
-  padding: 0 1em;
-}
-
-.cards {
+.photos {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.cards li {
-  border: 5px solid #000;
-  margin-bottom: 1em;
-}
-
-.cards h2 {
-  background-color: #333;
-  color: #fff;
-  margin: 0;
-  padding: 0.5em 1em;
-}
-
-.cards .inner {
-  padding: 0.5em 1em;
-}
-
-.sidebar {
-  background-color: #333;
-  border: 5px solid #000;
-  padding: 0.5em 1em;
-  color: #fff;
+.feature {
+  width: 200px;
 }
 
 @media screen and (min-width: 40em) {
-  header {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    column-gap: 1em;
-    line-height: 2rem;
-  }
-
-  header nav {
-    padding: 1em 0 1em 1em;
+  nav {
+    position: sticky;
+    top: 0px;
   }
 
   nav ul {
@@ -87,22 +61,32 @@ main {
   }
 
   nav ul li {
+    flex-flow: row wrap;
     flex: 1 auto;
-    text-align: right;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
   }
 
-  main {
+  article {
+    display: flow-root;
+  }
+
+  .feature {
+    float: left;
+    padding: 0 20px 10px 0;
+  }
+
+  .grid {
     display: grid;
-    grid-template-columns: 6fr 2fr;
+    grid-template-columns: 10fr 2fr;
     column-gap: 1em;
-    margin-top: 20px;
   }
 
-  .cards {
+  .photos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(150px, 2fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
   }
 }
